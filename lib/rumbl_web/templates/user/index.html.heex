@@ -1,0 +1,8 @@
+<h1>Listing Users</h1>
+
+<%= for user <- @users do %>
+  <div>
+    <%= render("user.html", user: user) %>
+    <%= link "View detail", to: Routes.user_path(@conn, :show, user.id) %>
+  </div>
+<% end %>
