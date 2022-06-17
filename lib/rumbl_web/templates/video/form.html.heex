@@ -6,18 +6,18 @@
   <% end %>
 
   <%= label f, :url %>
-  <%= text_input f, :url %>
+  <%= text_input f, :url, class: "input input-bordered" %>
   <%= error_tag f, :url %>
 
   <%= label f, :title %>
-  <%= text_input f, :title %>
+  <%= text_input f, :title, class: "input input-bordered" %>
   <%= error_tag f, :title %>
 
   <%= label f, :description %>
-  <%= textarea f, :description %>
+  <%= textarea f, :description, class: "input input-bordered" %>
   <%= error_tag f, :description %>
 
   <div>
-    <%= submit "Save" %>
+    <%= submit "Save", class: "btn" %>
   </div>
 </.form>
